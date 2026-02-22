@@ -4,7 +4,6 @@ def test_hello():
     client = app.test_client()
     response = client.get('/')
     assert response.status_code == 200
-    from app import app
 
 def test_hello_status():
     client = app.test_client()
